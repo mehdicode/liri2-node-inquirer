@@ -142,7 +142,7 @@ function ask() {
 
                         if (!error) {
 
-                            // console.log(JSON.stringify(response, null, 2)); 
+                            
                             movieId = JSON.parse(body).results[0].id;
                             var title = JSON.parse(body).results[0].original_title;
                             var date = JSON.parse(body).results[0].release_date;
@@ -243,4 +243,3 @@ function ask() {
     });
 };
 
-// // If the user doesn't guess the password...
